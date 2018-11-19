@@ -5,6 +5,7 @@
     android:orientation="horizontal"
     android:layout_margin="10dp">
     <ImageView
+        android:id="@+id/inflater_image"
         android:layout_width="200px"
         android:layout_height="250px"
         android:src="@mipmap/ic_launcher"/>
@@ -14,26 +15,31 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <TextView
+            android:id="@+id/inflater_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="tituloBook"
             />
         <TextView
+            android:id="@+id/inflater_author"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="author"
             />
         <TextView
+            android:id="@+id/inflater_edition"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="edicion"
             />
         <TextView
+            android:id="@+id/inflater_anio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="anio Creacion"
             />
         <TextView
+            android:id="@+id/inflater_categoria"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Categoria"
