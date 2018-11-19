@@ -14,6 +14,7 @@ import com.example.rex.appandroid.R;
 import java.util.ArrayList;
 
 public class AdapterBook extends BaseAdapter{
+
     private ArrayList<Book>  listItem;
     private Context context;
 
