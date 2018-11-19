@@ -20,10 +20,10 @@ public class SearchBook extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_book);
 
+        this.list = new ArrayList<Book>();
+        this.listview = (ListView) findViewById(R.id.list_Book);
         cargaDatos();
         this.adapter = new AdapterBook(this,this.list);
-        this.list = new ArrayList<>();
-        this.listview = (ListView) findViewById(R.id.list_Book);
 
         this.listview.setAdapter(this.adapter);
 
@@ -37,11 +37,11 @@ public class SearchBook extends AppCompatActivity {
         this.list.add(new Book("titulo4", "author", "edition",1998, "categoria", 25));
         this.list.add(new Book("titulo5", "author", "edition",1998, "categoria", 25));
         this.list.add(new Book("titulo6", "author", "edition",1998, "categoria", 25));
-        this.list.add(new Book());
+
     }
 
-    public void searchBook(View view) {
+    //public void searchBook(View view) {
         //cargaDatos();
-        this.listview.setAdapter(this.adapter);
-    }
+      //  this.listview.setAdapter(this.adapter);
+    //}
 }
