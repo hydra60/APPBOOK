@@ -11,13 +11,14 @@
         android:src="@mipmap/ic_launcher"/>
     <LinearLayout
         android:layout_margin="15dp"
-        android:layout_width="match_parent"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <TextView
             android:id="@+id/inflater_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="25dp"
             android:text="tituloBook"
             />
         <TextView
@@ -46,4 +47,9 @@
             />
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/inflater_precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Precio"/>
 </LinearLayout>

@@ -48,14 +48,16 @@ public class AdapterBook extends BaseAdapter{
         TextView edition = (TextView)convertView.findViewById(R.id.inflater_edition);
         TextView anio = (TextView)convertView.findViewById(R.id.inflater_anio);
         TextView categoria = (TextView)convertView.findViewById(R.id.inflater_categoria);
+        TextView precio = (TextView)convertView.findViewById(R.id.inflater_precio);
 
         //llenado seteado
         //img.setImageResource(2);//aqui se setea los view con los datos del objeto
-        titulo.setText(libro.getTitulo());
-        author.setText(libro.getAuthor());
-        edition.setText(libro.getEdition());
-        anio.setText(libro.getAnio()+"");
-        categoria.setText(libro.getAuthor());
+        titulo.setText(libro.getTitulo().toUpperCase());
+        author.setText("author: "+libro.getAuthor());
+        edition.setText("Edition: "+libro.getEdition());
+        anio.setText("year: "+libro.getAnio()+"");
+        categoria.setText("categoria: "+libro.getCategoria());
+        precio.setText("USD: "+libro.getPrecion());
 
         return convertView;
     }

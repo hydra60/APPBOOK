@@ -20,12 +20,19 @@
             android:layout_height="wrap_content"
             android:text="Search: "
             android:textSize="25dp"/>
-        <TextView
+        <EditText
             android:id="@+id/tv_search"
+            android:padding="5dp"
             android:layout_width="match_parent"
-            android:layout_height="23dp"
+            android:layout_height="35dp"
             android:inputType="text"/>
     </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:onClick="find"
+        />
     <ListView
         android:id="@+id/list_Book"
         android:layout_width="match_parent"
