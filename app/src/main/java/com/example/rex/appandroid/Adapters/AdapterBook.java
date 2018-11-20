@@ -32,6 +32,9 @@ public class AdapterBook extends BaseAdapter{
         return this.listItem.get(position);
     }
 
+
+
+
     @Override
     public long getItemId(int position) {
         return 0;
