@@ -17,9 +17,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
     }
 
     public void searchBook(View view) {
+
         Intent sig = new Intent(this,SearchBook.class);
         startActivity(sig);
     }
