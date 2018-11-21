@@ -16,7 +16,6 @@ import java.util.Iterator;
 
 public class SearchBook extends AppCompatActivity {
     private AdapterBook adapter;
-    //private ArrayList<Book> list;
     private Market lib;
     private ListView listview;
     private EditText find;
@@ -26,13 +25,8 @@ public class SearchBook extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_book);
         this.find =(EditText) findViewById(R.id.tv_search);
-      // this.list = new ArrayList<Book>();
         this.listview = (ListView) findViewById(R.id.list_Book);
         this.lib = new Market();
-        //cargaDatos();
-
-        //this.listview.setAdapter(this.adapter);
-
     }
     public void find(View view) {
         String add = this.find.getText().toString();
@@ -54,9 +48,4 @@ public class SearchBook extends AppCompatActivity {
             Toast.makeText(this,e+"",Toast.LENGTH_SHORT).show();
         }
     }
-
-    //public void searchBook(View view) {
-        //cargaDatos();
-      //  this.listview.setAdapter(this.adapter);
-    //}
 }

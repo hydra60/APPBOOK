@@ -1,10 +1,8 @@
 package com.example.rex.appandroid.Objects;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Hashtable;
 import java.util.Iterator;
-import java.util.Map;
+
 
 public class Market {
     public class BookCategories{
